@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+@media only screen and (max-device-width: 1024px) {
+/* .menu { width:400px; } */
+}
+
+body {
+  background-image: linear-gradient(to right, #A9E2F3, #2E9AFE,#8258FA); 
+  font-size:22px;
+  line-height: 32px;
+  color: #ffffff;
+  word-wrap:break-word !important;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  margin-top: 40px;
+  text-align:left;
+  font-size:25px;
+  font-family: 'Bree Serif', 'serif';
+}
+
+#container {
+  margin: 10 auto;
+  position: relative;
+  background: #1C1C1C;
+ 
+
+}
+
+p {
+  text-align: center;
+}
+
+nav {
+  margin: 0px 0;
+  background-color: #1C1C1C;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  }
+  
+nav ul li {
+  display:inline-block;
+  background-color: #1C1C1C;
+  }
+
+nav a {
+  display:block;
+  padding:0 10px; 
+  color:#FFF;
+  font-size:20px;
+  line-height: 60px;
+  text-decoration:none;
+}
+
+nav a:hover { 
+  background-color: #848484; 
+}
+
+/* OCULTAR MENU SUSPENSO */
+nav ul ul {
+  display: none;
+  position: absolute; 
+  top: 60px; /* ALTURA DO NAV PRINCIPAL */
+}
+  
+/* MENU SUSPENSO NO HOVER */
+nav ul li:hover > ul {
+  display:inherit;
+}
+  
+/* CONFIGURAÇÃO DO MENU SUSPENSO */
+nav ul ul li {
+  width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+ 
+/* SIMBOLO DO MENU SUSPENSO */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+.btn:focus, .btn::-moz-focus-inner{
+  outline:none;
+  border:none;
+}
+.btn{
+  font-family: arial;
+  font-size:14px;
+  text-transform: uppercase;
+  font-weight:700;
+  border:none;
+  padding:10px;
+  cursor: pointer;
+  display:inline-block;
+  text-decoration: none;
+}
+.btn-green{
+  background:#19F29E;
+  color:black;
+  box-shadow:0 5px 0 #19F29E;
+}
+.btn-green:hover{
+  background:#0B6D47;
+  box-shadow:0 5px 0 #0B6D47;
+}
+
+.btn-red{
+  background:#F81902;
+  color:#fff;
+  box-shadow:0 5px 0 #F81902;
+}
+.btn-red:hover{
+  background:#9D1001;
+  box-shadow:0 5px 0 #9D1001;
+}
+
+
+.div-select {
+    width:250px;  /* Tamanho final do select */
+    overflow:hidden; /* Esconde o conteúdo que passar do tamanho especificado */
+}
+  
+
+#select{
+   -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+   -moz-appearance: none; /* Remove estilo padrão do FireFox */
+   appearance: none; /* Remove estilo padrão do FireFox*/
+   background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+   background-position: 276px center;  /*Posição da imagem do background*/
+   width: 310px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+   height:30px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+   border:1px solid #ddd;
+}
+
+.slider img{
+   float: left;
+    width: 200px;
+    height: 300px;
+    padding: 5px;
+     list-style-type: none;
+}
+
